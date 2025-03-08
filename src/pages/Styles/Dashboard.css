@@ -1,0 +1,65 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.month-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.month-selector h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.month-selector button {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.month-selector button:hover {
+  background-color: #303f9f;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.expense-stats, .recent-expenses {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expense-stats h3, .recent-expenses h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+@media (max-width: 900px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+  .expense-stats, .recent-expenses {
+    width: 100%;
+    min-width: 280px;
+    overflow-x: auto;
+  }
+}

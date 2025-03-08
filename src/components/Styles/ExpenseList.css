@@ -1,0 +1,73 @@
+.expense-list {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.expense-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expense-list th, .expense-list td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-list th {
+  font-weight: 600;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.expense-list tr:hover {
+  background-color: #f5f7fa;
+}
+
+.category-chip {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  color: #2196F3;
+}
+
+.delete-btn {
+  color: #F44336;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.no-expenses {
+  text-align: center;
+  padding: 30px;
+}
+
+.no-expenses p {
+  margin-bottom: 20px;
+  color: #777;
+}

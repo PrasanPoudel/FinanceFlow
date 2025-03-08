@@ -1,0 +1,40 @@
+.expense-charts {
+  width: 100%;
+}
+
+.chart-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.chart-tabs button {
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: #777;
+  transition: all 0.2s;
+}
+
+.chart-tabs button.active {
+  color: #3f51b5;
+  border-bottom-color: #3f51b5;
+}
+
+.chart-container {
+  height: 300px;
+  margin-top: 20px;
+}
+
+.no-data {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
